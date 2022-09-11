@@ -12,6 +12,7 @@ html *{
 }
 body{
     font-family: 'Lato', sans-serif;
+    background-color: var(--primary-clr);
 }
 main{
     display: flex;
@@ -106,7 +107,71 @@ button{
     margin: 0 auto;
     margin-top: 2rem;
 }
+button:hover {
+    background-color: var(--secondary-clr);
+    color: var(--text-clr);
+    border-color: white;
+    transform: scale(1.2);
+}
 #error-msg{
     color: red;
     font-weight: 700;
+}
+
+/* footer */
+
+/* footer */
+.footer,
+.quiz-footer {
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--secondary-clr);
+    color: var(--text-clr);
+    width: 100vw;
+    text-align: center;
+    /* color: black; */
+    padding: 1rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+footer .quiz-footer {
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--primary-clr);
+    color: black;
+    width: 100vw;
+    text-align: center;
+}
+
+footer .link-list {
+    text-align: center;
+    margin: 1rem 0;
+    list-style-type: none;
+    margin: 1rem auto;
+}
+
+footer .link-list li {
+    display: inline;
+    padding: 1rem;
+}
+
+footer .footer-text {
+    /* font-weight: bold; */
+    font-size: large;
+}
+
+footer li a i {
+    color: black;
+    font-size: 1.3rem;
+}
+
+footer li a i:hover {
+    transform: scale(1.5);
 }
