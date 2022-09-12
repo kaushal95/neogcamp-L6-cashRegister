@@ -5,14 +5,21 @@
     --secondary-clr:#91caf9;
     --text-clr:#1b3344
 }
+html{
+    height: 100%;
+}
 html *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: 'Lato', sans-serif;
     background-color: var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 main{
     display: flex;
@@ -51,6 +58,7 @@ table{
     border-spacing: 0;
     border-collapse: collapse;
     margin-bottom: 2rem;
+    /* flex-shrink: 2; */
 
 }
 table caption{
@@ -118,36 +126,17 @@ button:hover {
     font-weight: 700;
 }
 
-/* footer */
 
 /* footer */
-.footer,
-.quiz-footer {
+.footer {
     overflow: hidden;
     margin: 0 auto;
     background-color: var(--secondary-clr);
     color: var(--text-clr);
     width: 100vw;
     text-align: center;
-    /* color: black; */
     padding: 1rem;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-
-footer .quiz-footer {
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: var(--primary-clr);
-    color: black;
-    width: 100vw;
-    text-align: center;
+    margin-top: auto;
 }
 
 footer .link-list {
@@ -163,7 +152,7 @@ footer .link-list li {
 }
 
 footer .footer-text {
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: large;
 }
 
